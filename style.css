@@ -1,0 +1,110 @@
+:root {
+  --dark-color: #19283f;
+  --color-text-navbar: #ffffff;
+  --green-color: #33d1cc;
+  --section-color: #eff7fa;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --hover-color: #f27a8c;
+  --text-hover-color: #7a6d6d;
+  --transition-hover: 0.4s ease-in-out;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 5000px;
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+  color: var(--text-hover-color);
+  background-color: var(--hover-color);
+  transition: var(--transition-hover);
+}
+
+/* start van bar */
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar-color {
+  color: var(--color-text-navbar);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--color-text-navbar);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:focus,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--green-color);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+  color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+  color: var(--color-text-navbar);
+  border-color: var(--color-text-navbar);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded='true'] {
+  border-color: var(--green-color);
+}
+
+/* start landing section */
+
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+
+/* end landing */
+/* start  section features */
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+.main-title::after {
+  content: '';
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* end   section features*/
